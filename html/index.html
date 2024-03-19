@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="../js/calc.js"></script>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" media="(max-width: 480px)" href="../css/mobile.css" />
+  <title>Calculadora EPE</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul class="nav-links">
+        <img src="../img/logoempresa.png" class="logo" alt="Logo utn">
+        <li class="nav-item"><a href="../html/index.html" class="active">INICIO</a></li>
+        <li class="nav-item" i><a href="#nosotros">NOSOTROS</a></li>
+        <li class="nav-item" i><a href="#calculadora">CALCULADORA</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div>
+    <img src="../img/obra.jpeg" class="imagen">
+  </div>
+
+  <h2>NOSOTROS</h2>
+
+  <div id="nosotros">
+    <p>A partir de 1888, año en que comenzó a explotarse comercialmente
+      la producción de energía eléctrica en la provincia de Santa Fe y durante más de medio siglo, el servicio de
+      energía eléctrica fue prestado por particulares
+      (salvo contadas excepciones). Los municipios y las comunas, que otorgaban concesiones por períodos relativamente
+      extensos,
+      eran los encargados de controlar y vigilar las condiciones en que se ofrecía la prestación.
+
+      La Empresa Provincial de la Energía de Santa Fe es una de las
+      distribuidoras eléctricas más importantes de la República Argentina.
+      Abastece a más de 1.300.000 clientes distribuidos en 101.000 km2.
+    </p>
+  </div>
+
+  <h2>CALCULADORA</h2>
+
+  <form>
+    <div class="cent cuadrado" id="calculadora">
+      <div onclick="escuchaBtn()">
+        <p>Seleccione tipo de usuario:</p>
+        <input type="radio" name="eleccion" required id="residencial" value="0.21"><label for="r1">Residencial</label>
+        <input type="radio" name="eleccion" required id="industrial" value="0.28"><label for="r2">Industrial</label>
+      </div>
+
+      <p>Seleccione zona del domicilio:</p>
+      <label for="algo" area-label="required"></label>
+      <select id="zonaDom" onclick="valueSelectZonaDom()" required>
+        <option id="select" value="">Seleccionar</option>
+        <option id="distNorte" value="5.60">Distrito Norte</option>
+        <option id="distCentro" value="5.80">Distrito Centro</option>
+        <option id="distOeste" value="5.35">Distrito Oeste</option>
+        <option id="distSur" value="5.40">Distrito Sur</option>
+      </select>
+
+      <div>
+        <p>Ingrese cantidad de kWh del mes consumidos</p>
+        <input type="number" id="cantidadKWH" min="0" max="1000000000" onchange="inputKWH()" required></p>
+      </div>
+      <button type="button" onclick="calcular()">Calcular costo</button>
+      <br>
+      <label id="resultadoTotal"></label>
+    </div>
+  </form>
+
+  <div class="sep"></div>
+
+  <footer>
+    <p>© copyright www.epe.gob.ar ©</p>
+    <p>© Todos los derechos reservados ©</p>
+  </footer>
+
+</body>
+
+</html>
+
+<!-- Requerimientos Técnicos y Funcionales
+Campos de entrada del formulario
+La calculadora deberá permitir al usuario cargar 3 campos diferentes para poder realizar el
+cálculo del costo en pesos, los cuales son:
+● Tipo de usuario (input radio de selección única):
+○ Residencial: aplica IVA 21%
+○ Industrial: aplica IVA 27%
+● Zona del domicilio (input select):
+○ Distrito Centro: $5,80 por kWh
+○ Distrito Zur: $5.40 por kWh
+○ Distrito Oeste: $5.35 por kWh
+○ Distrito Norte: $5.60 por kWh
+● Cantidad de kWh del mes (number)
+Validaciones
+Una vez que el usuario ingresa los 3 campos requeridos y presiona el botón correspondiente
+para realizar el cálculo del costo, antes de realizar dicho cálculo se deben realizar
+validaciones desde JavaScript para que se cumplan las siguientes condiciones:
+● Tipo de usuario: es requerido que se seleccione alguna de las dos opciones
+● Zona del domicilio: es requerido que se seleccione alguna de las 4 opciones
+● Cantidad de kWh del mes: el número que ingresa el usuario es requerido, no debe
+ser 0 ni negativo.
+Si no se cumple alguno de esos criterios, no se deberá continuar con el cálculo y se deberá
+informar al usuario dicha situación.
+Cálculo de costo / resultado
+El resultado se debe calcular con la siguiente fórmula:
+Total en $ = Costo de servicio + (Cantidad de kWh * Costo según zona de domicilio) * (1 + IVA
+según Tipo de Usuario)
+El costo de servicio debe definirse como un valor constante. El valor actual es de 102 $/mes.
+Ejemplo: un Residencial, con domicilio en el Distrito Centro y consumo de 60 kWh, tomando
+el costo de servicio sugerido, debería pagar
+102 $ + 60 kWh * 5.80 $/kWh * (1 + 0.21) = $ 523.08 -->
