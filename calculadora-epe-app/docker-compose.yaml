@@ -36,7 +36,7 @@ services:
     expose:
       - "80"
     volumes:
-      - ~/tpcloud/calculadora-epeV3/html:/usr/share/nginx/html:ro
+      - ~/tpcloud-bootcamp-devops-we/calculadora-epe-app/html:/usr/share/nginx/html:ro
     environment:
       - VIRTUAL_HOST=epecalctest.ddns.net
       - LETSENCRYPT_HOST=epecalctest.ddns.net
