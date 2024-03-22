@@ -15,10 +15,26 @@ Nginx
 DevOps
 Amazon AWS
 DigitalOcean
-NO-IP
+No-IP
 LetsEncrypt
 
 Se usan las herramientas mencionadas para colocar en funcionamiento una máquina virtual de Ubuntu Server 22.04 LTS en un servicio de nube/servidor mencionado como DigitalOcean. La máquina virtual utiliza y ejecuta un script Bash para instalar configuraciones generales y herramientas solicitadas en las condiciones del proyecto practico. Se solicita también la creación de usuarios con sus respectivos permisos y grupos. Además, se solicita utilizar un servidor web (Nginx) para subir un proyecto/repositorio propio, agregando el servicio de Docker Compose con sus respectivas características solicitadas sobre puertos, directorios y certificados.
 
 Paso a paso para ejecutar:
-EN CONSTRUCCION
+· Crear usuario en DigitalOcean.
+· Construir un Droplet en DigitalOcean con configuraciones basicas y segun necesidades del usuario, utilizando Ubuntu Server 22.04 LTS como configuracion de imagen, configurar con prioridad la clave SSH para conectar a posterior con la maquina virtual.
+· Conectar a la maquina virtual. Utilizar la consola web de la maquina virtual entregada por DigitalOcean o conectarse por consola de Ubuntu Desktop o distintas distribuciones, utilizando "ssh root@«IP-OTORGADA POR DIGITALOCEAN».
+· Dentro de la terminal, clonar el repositorio tp-cloud-bootcamp-devops-we, en el se encuentran el repositorio para la aplicacion lanzada y los scripts para ejecucion de configuracion.
+· Ejecutar el script bash "setupvm.sh" (bash setupvm.sh).
+· El script comenzara a realizar las configuraciones necesarias y solicitadas. En el caso para la creacion de usuarios, el sistema solicita creacion para contraseñas, colocarles segun la que el usuario desee.
+· Clonar con el usuario nginx creado anteriormente el repositorio solicitado del video TU SITIO CON SSL GRATIS en DOCKER - Nginx Proxy (PeladoNerd).
+· Instalar nginx. EN CONSTRUCCION
+· Crear un usuario con permisos de docker.
+· Crear cuenta en No-IP. Solicitar un host gratuito. Configurar IP/Objetivo con nuestro IPv4 del servidor/nube de DigitalOcean. Actualizar host con nuevas configuraciones realizadas.
+· Entrar al directorio "calculadora-epe-app" dentro del repositorio, en el mismo se encuentra la aplicacion lanzada con el respectivo docker-compose.yaml preconfigurado.
+· Realizar configuraciones segun el video TU SITIO CON SSL GRATIS en DOCKER - Nginx Proxy (PeladoNerd).
+· Utilizar Nginx configurado para puerto 80 y con redireccion para 443 con certificados LetsEncrypt.
+
+Podemos visualizar la pagina como ejemplo que se lanzo con Docker Compose en epecalctest.ddns.net.
+
+
