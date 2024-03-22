@@ -38,8 +38,8 @@ services:
     volumes:
       - ~/tpcloud/calculadora-epeV3/html:/usr/share/nginx/html:ro
     environment:
-      - VIRTUAL_HOST=epecalculadoratest.ddns.net,www.epecalculadoratest.ddns.net
-      - LETSENCRYPT_HOST=epecalculadoratest.ddns.net,www.epecalculadoratest.ddns.net
+      - VIRTUAL_HOST=epecalctest.ddns.net
+      - LETSENCRYPT_HOST=epecalctest.ddns.net
       - LETSENCRYPT_EMAIL=giurushima@hotmail.com
     depends_on:
       - nginx-proxy
