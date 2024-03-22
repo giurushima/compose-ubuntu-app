@@ -1,4 +1,4 @@
-«h1»<em>Proyecto practico desarrollado para Bootcamp DevOps Web Experto </em>«/h1»
+<h1><em>Proyecto practico desarrollado para Bootcamp DevOps Web Experto </em></h1>
 - Gabriel Ignacio Urushima - @giurushima
 
 Proyecto sobre lo desarrollado en el Bootcamp, usando temas de infraestructura. En el cual se aplican los conocimientos sobre lo visto en los cursos de la plataforma Platzi y YouTube.
