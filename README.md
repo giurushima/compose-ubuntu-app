@@ -38,6 +38,5 @@ Podemos visualizar la pagina como ejemplo que se lanzo con Docker Compose en epe
 
 > [!NOTE]
 > Se puede observar el historial de cambios y seguimientos de avances del proyecto en general en otros repositorios:
-> https://github.com/giurushima/scripts-bash-vm.git
-> https://github.com/giurushima/calculadora-epeV3.git
-
+> - https://github.com/giurushima/scripts-bash-vm.git
+> - https://github.com/giurushima/calculadora-epeV3.git
