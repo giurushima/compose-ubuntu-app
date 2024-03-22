@@ -44,3 +44,6 @@ Podemos visualizar la pagina como ejemplo que se lanzo con Docker Compose hacien
 > Se puede observar el historial de cambios y seguimientos de avances del proyecto en general en otros repositorios:
 > - [Scripts Bash](https://github.com/giurushima/scripts-bash-vm)
 > - [Calculadora EPE](https://github.com/giurushima/calculadora-epeV3)
+
+> [!IMPORTANT]
+> Las pruebas estan realizadas en Ubuntu Desktop. Se recomienda utilizar Linux.
