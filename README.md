@@ -36,7 +36,8 @@ Se usan las herramientas mencionadas para colocar en funcionamiento una máquina
 
 Podemos visualizar la pagina como ejemplo que se lanzo con Docker Compose en epecalctest.ddns.net.
 
-[!NOTE]
-Se puede observar el historial de cambios y seguimientos de avances del proyecto en general en otros repositorios:
-https://github.com/giurushima/scripts-bash-vm.git
-https://github.com/giurushima/calculadora-epeV3.git
+> [!NOTE]
+> Se puede observar el historial de cambios y seguimientos de avances del proyecto en general en otros repositorios:
+> https://github.com/giurushima/scripts-bash-vm.git
+> https://github.com/giurushima/calculadora-epeV3.git
+
