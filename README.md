@@ -28,15 +28,14 @@ Se usan las herramientas mencionadas para colocar en funcionamiento una máquina
 5. Ejecutar el script bash "setupvm.sh" (bash setupvm.sh).
 6. El script comenzara a realizar las configuraciones necesarias y solicitadas. En el caso para la creacion de usuarios, el sistema solicita creacion para contraseñas, colocarles segun la que el usuario desee.
 7. Clonar con el usuario nginx creado anteriormente el repositorio solicitado del video [TU SITIO CON SSL GRATIS en DOCKER - Nginx Proxy (PeladoNerd)](https://www.youtube.com/watch?v=S2YFqf4L7l8&t=160s).
-8. Instalar nginx. EN CONSTRUCCION
-9. Crear un usuario con permisos de docker.
-10. Crear cuenta en No-IP. Solicitar un host gratuito y colocar un nombre de host. Configurar IP/Objetivo con nuestro IPv4 del servidor/nube de DigitalOcean. Actualizar host con nuevas configuraciones realizadas.
-11. Entrar al directorio "calculadora-epe-app" dentro del repositorio, en el mismo se encuentra la aplicacion lanzada con el respectivo docker-compose.yaml preconfigurado.
-12. Realizar configuraciones segun el video [TU SITIO CON SSL GRATIS en DOCKER - Nginx Proxy (PeladoNerd)](https://www.youtube.com/watch?v=S2YFqf4L7l8&t=160s).
-13. Utilizar Nginx configurado en docker-compose.yaml para puerto 80 y con redireccion para 443 con certificados LetsEncrypt.
-14. Colocar direccion IPv4 que se utiliza en No-IP y DigitalOcean en el archivo hosts en Linux con "vim /etc/hosts" (Para Windows y Mac puede variar la ruta/direccion).
-15. Utilizar Docker Compose. Entrar y verificar estar posicionado sobre /calculadora-epe-app. Sobre esta carpeta, utilizamos "docker-compose up -d".
-16. Abrir nuestro navegador y visitar el nombre del host que configuramos en No-IP.
+8. Crear un usuario con permisos de docker.
+9. Crear cuenta en No-IP. Solicitar un host gratuito y colocar un nombre de host. Configurar IP/Objetivo con nuestro IPv4 del servidor/nube de DigitalOcean. Actualizar host con nuevas configuraciones realizadas.
+10. Entrar al directorio "calculadora-epe-app" dentro del repositorio, en el mismo se encuentra la aplicacion lanzada con el respectivo docker-compose.yaml preconfigurado.
+11. Realizar configuraciones segun el video [TU SITIO CON SSL GRATIS en DOCKER - Nginx Proxy (PeladoNerd)](https://www.youtube.com/watch?v=S2YFqf4L7l8&t=160s).
+12. Utilizar Nginx configurado en docker-compose.yaml para puerto 80 y con redireccion para 443 con certificados LetsEncrypt.
+13. Colocar direccion IPv4 y nombre del host que se utiliza en No-IP y DigitalOcean en el archivo hosts en Linux con "vim /etc/hosts" (Para Windows y Mac puede variar la ruta/direccion).
+14. Utilizar Docker Compose. Entrar y verificar estar posicionado sobre /calculadora-epe-app. Sobre esta carpeta, utilizamos "docker-compose up -d".
+15. Abrir nuestro navegador y visitar el nombre del host que configuramos en No-IP.
 
 Podemos visualizar la pagina como ejemplo que se lanzo con Docker Compose haciendo click [aqui](https://epecalctest.ddns.net/).
 
