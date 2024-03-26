@@ -1,6 +1,6 @@
 #!/bin/bash
-# Programa para levantar maquina virtual de ubuntu server
-# Autor: Gabriel
+# Programa para configurar maquina virtual iniciada en DigitalOcean.
+# Autor: Gabriel - @giurushima
 
 # Actualizar lista de paquetes
 sudo apt update && sudo apt upgrade -y
@@ -72,11 +72,3 @@ sudo usermod -aG docker nginx
 sudo systemctl status docker
 sudo systemctl enable docker
 sudo systemctl start docker
-
-# Instalar git
-sudo apt install git -y
-git config --global user.name "giurushima"
-git config --global user.email "giurushima@hotmail.com"
-
-# 4: Clonar repositorio con user nginx
-git clone https://github.com/pablokbs/peladonerd.git
