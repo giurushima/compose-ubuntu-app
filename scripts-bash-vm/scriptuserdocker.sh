@@ -4,7 +4,7 @@
 
 # Creacion de usuario "userdocker" con permisos de Docker.
 sudo adduser userdocker
-sudo usermod -aG docker userdocker
+sudo usermod -aG userdocker docker
 sudo systemctl status docker
 sudo systemctl enable docker
 sudo systemctl start docker
