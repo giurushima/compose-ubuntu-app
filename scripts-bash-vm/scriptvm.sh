@@ -34,7 +34,7 @@ if [[ $(apt-mark showinstall | grep -q "^docker") == "docker" ]]; then
         sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
       sudo apt-get update
       sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin -y
-      sudo snap install docker
+      snap install docker
       docker --version
 else
       echo "Docker ya esta instalado"
