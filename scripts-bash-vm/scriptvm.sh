@@ -21,6 +21,8 @@ sudo usermod -aG ssh
 
 # Validar docker e instalar
 if apt-mark showinstall | grep -q "^docker"; then
+      echo "Docker ya esta instalado"
+else
       echo "Instalando Docker"
       sudo apt-get update
       sudo apt-get install ca-certificates curl -y
@@ -35,19 +37,17 @@ if apt-mark showinstall | grep -q "^docker"; then
       sudo apt-get update
       sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin -y
       snap install docker
-      docker --version
-else
-      echo "Docker ya esta instalado"
+      docker --version  
 fi
 
 # Validar docker compose e instalar
 if apt-mark showinstall | grep -q "^docker-compose-plugin"; then
+      echo "Docker Compose ya esta instalado"
+else
       echo "Instalando Docker Compose"       
       sudo apt-get update
       sudo apt-get install docker-compose-plugin -y
       docker compose version
-else
-      echo "Docker Compose ya esta instalado"
 fi
 
 # Crear el grupo docker e iniciar el servicio
