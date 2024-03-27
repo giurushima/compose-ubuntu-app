@@ -17,7 +17,8 @@ sudo usermod -aG sudo webexpertosudo
 
 # Crear usuario para conexion ssh
 sudo adduser ssh
-sudo usermod -aG ssh
+sudo addgroup ssh
+sudo usermod -aG ssh ssh
 
 # Validar docker e instalar
 if apt-mark showinstall | grep -q "^docker"; then
