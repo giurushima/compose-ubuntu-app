@@ -17,7 +17,8 @@ sudo usermod -aG sudo webexpertosudo
 
 # Crear usuario para conexion ssh
 sudo adduser ssh
-sudo usermod -aG ssh
+sudo addgroup ssh
+sudo usermod -aG ssh ssh
 
 # Validar docker e instalar
 if apt-mark showinstall | grep -q "^docker"; then
@@ -58,13 +59,31 @@ sudo systemctl enable docker
 sudo systemctl start docker
 
 # Instalar mc
-sudo apt install mc -y
+if apt-mark showinstall | grep -q "^mc"; then
+      echo "MC (Midnight Commander) ya esta instalado"
+else
+      echo "Instalando MC (Midnight Commander)"       
+      sudo apt-get update
+      sudo apt install mc -y
+fi
 
 # Instalar vim
-sudo apt install vim -y
+if apt-mark showinstall | grep -q "^vim"; then
+      echo "Vim ya esta instalado"
+else
+      echo "Instalando vim (Vi IMproved)"       
+      sudo apt-get update
+      sudo apt install vim -y
+fi
 
 # Instalar net-tools
-sudo apt install net-tools -y
+if apt-mark showinstall | grep -q "^net-tools"; then
+      echo "Net-tools ya esta instalado"
+else
+      echo "Instalando net-tools"       
+      sudo apt-get update
+      sudo apt install net-tools -y
+fi
 
 # Crear usuario nginx con permisos docker
 sudo adduser nginx
