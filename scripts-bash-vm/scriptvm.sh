@@ -20,7 +20,7 @@ sudo adduser ssh
 sudo usermod -aG ssh
 
 # Validar docker e instalar
-if [[ $(apt-mark showinstall | grep -q "^docker") == "docker" ]]; then
+if [[ apt-mark showinstall | grep -q "^docker" == "^docker" ]]; then
       echo "Instalando Docker"
       sudo apt-get update
       sudo apt-get install ca-certificates curl -y
