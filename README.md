@@ -15,7 +15,6 @@ Se usan las herramientas mencionadas para colocar en funcionamiento una máquina
 - Docker Compose
 - Nginx
 - DevOps
-- Amazon AWS
 - DigitalOcean
 - No-IP
 - LetsEncrypt
